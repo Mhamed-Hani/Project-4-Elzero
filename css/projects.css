@@ -1,0 +1,103 @@
+.projects .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.projects .boxes .box {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.projects .boxes .box > p {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.projects .boxes .box .title h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.projects .boxes .box .imgs {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    display: flex;
+}
+.projects .boxes .box .imgs img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid white;
+}
+.projects .boxes .box .imgs img:not(:first-of-type) {
+    margin-left: -15px;
+}
+.projects .boxes .box .skills {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+}
+.projects .boxes .box .skills div {
+    padding: 5px 10px;
+    background-color: #ececec;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-left: 5px;
+}
+.projects .boxes .box .price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+}
+.projects .boxes .box .price .prog {
+    width: 50%;
+    background-color: #ccc;
+    height: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.projects .boxes .box .price .prog span {
+    height: 8px;
+    display: block;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+@media (max-width: 767px) {
+    .projects .boxes .box .price {
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .projects .boxes .box .price .prog {
+        margin-bottom: 10px;
+    }
+    .projects .boxes .box .skills {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .projects .boxes .box .skills div {
+        margin-bottom: 10px;
+    }
+}

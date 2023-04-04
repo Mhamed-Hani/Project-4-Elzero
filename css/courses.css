@@ -1,0 +1,107 @@
+.courses .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.courses .boxes .box {
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 425px;
+    position: relative;
+}
+.courses .boxes .box .back-image {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    background-position: center;
+}
+.courses .boxes .box .back-image img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+}
+.courses .boxes .box .text {
+    padding: 20px;
+}
+.courses .boxes .box .text h3 {
+    margin-bottom: 20px;
+}
+.courses .boxes .box .info {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-left: 33px;
+}
+.courses .boxes .box .info button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.courses .boxes .box .info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.courses .boxes .box .info div p::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f007";
+    font-weight: 900;
+    font-size: 13px;
+    position: absolute;
+    left: 18px;
+    bottom: 21px;
+    color: gray;
+
+}
+.img-1 {
+    background-image: url(courses-imgs/course-01.jpg);
+}
+.img-2 {
+    background-image: url(courses-imgs/course-02.jpg);
+}
+.img-3 {
+    background-image: url(courses-imgs/course-03.jpg);
+}
+.img-4 {
+    background-image: url(courses-imgs/course-04.jpg);
+}
+.img-5 {
+    background-image: url(courses-imgs/course-05.jpg);
+}
